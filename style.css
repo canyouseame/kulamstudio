@@ -40,7 +40,7 @@ body {
 	gap: 5px;
 }
 /* column widths */
-.small { flex: 1 1 6%; }
+.small { flex: 1 1 10%; }
 .large { flex: 1 1 82%; }
 .full { flex: 1 1 100%; }
 .half { flex: 1 1 49%; }
@@ -132,6 +132,10 @@ section.small > img {
 	margin: 5px auto;
 	border:2px ridge var(--border);
 	border-radius: 5px;
+}
+section.half {
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
 }
 
 

@@ -104,6 +104,7 @@ nav a:link, nav a:visited {
 }
 nav a:hover, nav a:focus {
 	background: linear-gradient(to right,var(--bg), var(--gradientBottom), var(--gradientTop));
+	font-weight: bold;
 }
 
 /* optional button styling*/
@@ -209,6 +210,52 @@ a:visited {
 	max-width: 100%;
 	width: 75%;      
   	height: auto; 
-	margin: 5px ;
-	margin-bottom: 3%;
+	margin: 1px ;
+}
+.play-link {
+  color: var(--accent);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+/* memmbers list*/
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 20px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member.center {
+  grid-column: 1 / -1; 
+  justify-self: center;
+}
+
+.team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 2px solid var(--accent);
+  margin-bottom: 8px;
+}
+
+.team-member a {
+  color: #c23a06;
+  text-decoration: underline;
+  font-size: 22px;
+}
+.team-member a:hover {
+	font-style: oblique;
+	color: #ffbf00;
+}
+
+.team-member sup {
+  color: #b3b3b3;
 }
